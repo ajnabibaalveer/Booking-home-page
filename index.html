@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assest/Images/ZOLAZ.webp" type="image/x-icon">
+    <title>- Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- for the date picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./Assest/css/index.css">
+</head>
+
+<body>
+<!-- Nav Section Start -->
+    <nav>
+        <div class="logo"><a href="#"><strong>Zolaz</strong></a></div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+        </div>
+        <div class="nav-links-container" id="navLinks">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#" class="btn mobile-book-btn">Book Now</a>
+        </div>
+        <div class="bookNow">
+            <a href="#" class="btn desktop-book-btn">Book Now</a>
+        </div>
+    </nav>
+<!-- Haeder Section Start -->
+    <header>
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="./Assest/Images/video-66e7f8eae8381.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-text">
+            <h1>Discover Extraordinary Stays</h1>
+            <p>Handpicked luxury properties for unforgettable experiences</p>
+        </div>
+
+        <div class="search-bar">
+            <div style="position: relative;">
+                <i class="fas fa-location-dot"
+                    style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: gray;"></i>
+                <input type="text" id="location" placeholder="Where are you going?"
+                    style="padding-left: 35px; height: 40px; width: 210px;">
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-calendar-days"
+                    style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: gray;"></i>
+                <input type="text" id="date-range" placeholder="Check-in - Check-out" readonly
+                    style="padding-left: 35px; height: 40px; width: 250px;">
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-user"
+                    style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: gray;"></i>
+                <input type="number" id="Adults" min="1" max="10" placeholder="Adults"
+                    style="padding-left: 35px; height: 40px; width: 100px;">
+            </div>
+            <div style="position: relative;">
+                <i class="fas fa-child"
+                    style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: gray;"></i>
+                <input type="number" id="child" min="0" max="10" placeholder="Children"
+                    style="padding-left: 35px; height: 40px; width: 100px;">
+            </div>
+            <button>
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+    </header>
+<!-- Collection Section Start -->
+    <section>
+        <h2>Curated Collections</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./Assest/Images/Ocean.webp" alt="Azure Ocean Resort">
+                <div class="card-content">
+                    <h3>Azure Ocean Resort</h3>
+                    <p>Maldives — From $899/night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Assest/Images/mountainLodge.jpeg" alt="Mountain Lodge">
+                <div class="card-content">
+                    <h3>Mountain Lodge</h3>
+                    <p>Swiss Alps — From $699/night</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Assest/Images/DesertVilla.webp" alt="Desert Oasis Villa">
+                <div class="card-content">
+                    <h3>Desert Oasis Villa</h3>
+                    <p>Dubai — From $799/night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Section Start -->
+    <section>
+        <div class="cards">
+            <div class="card" style="height: 350px;">
+                <img src="./Assest/Images/BeyondStay.webp" alt="Beyond Stays" style="height: 350px;">
+            </div>
+            <div class="card-content" style="text-align:left">
+                <h2>Beyond Ordinary Stays</h2>
+                <p>Experience unparalleled luxury and personalized service. Each stay is crafted to exceed expectations
+                    with exceptional comfort and distinctive local experiences.</p>
+                <a href="#" class="btn" style="margin-top: 1rem; display: inline-block;">Explore More</a>
+            </div>
+        </div>
+    </section>
+<!-- Popular Section Start -->
+    <section>
+        <h2>Popular Destinations</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./Assest/Images/paris.webp" alt="Paris">
+                <div class="card-content">
+                    <h3>Paris</h3>
+                    <p>24 Properties</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Assest/Images/santorini.webp" alt="Santorini">
+                <div class="card-content">
+                    <h3>Santorini</h3>
+                    <p>18 Properties</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Assest/Images/tokyo.webp" alt="Tokyo">
+                <div class="card-content">
+                    <h3>Tokyo</h3>
+                    <p>32 Properties</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Assest/Images/Dubai.webp" alt="Dubai">
+                <div class="card-content">
+                    <h3>Dubai</h3>
+                    <p>28 Properties</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Features Section Start -->
+    <div class="features">
+        <div>
+            <img src="./Assest/Images/concierge.svg" alt="Concierge Svg">
+            <h3>24/7 Concierge</h3>
+            <p class="text_Color">Personalized assistance at your fingertips</p>
+        </div>
+        <div>
+            <img src="./Assest/Images/privacy.svg" alt="Concierge Svg">
+            <h3>Secure Booking</h3>
+            <p class="text_Color">Safe and reliable reservation process</p>
+        </div>
+        <div>
+            <img src="./Assest/Images/support.svg" alt="Concierge Svg">
+            <h3>Expert Support</h3>
+            <p class="text_Color">Dedicated team for your needs</p>
+        </div>
+    </div>
+<!-- News Section Start -->
+    <div class="newsletter">
+        <h2>Stay Inspired</h2>
+        <p style="padding: 10px;">Subscribe to our newsletter for exclusive offers and luxury inspiration</p>
+        <form>
+            <input type="email" placeholder="Enter your email" id="email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+<!-- Footer Section Start -->
+    <footer>
+        <div>
+            <strong>Zolaz</strong>
+            <p>Discover and book the world’s most extraordinary stays</p>
+        </div>
+        <div>
+            <p><strong>Quick Links</strong></p>
+            <a class="QuickLink" href="#">About Us</a>
+            <a class="QuickLink" href="#">Destinations</a>
+            <a class="QuickLink" href="#">Properties</a>
+            <a class="QuickLink" href="#">Career</a>
+            <a class="QuickLink" href="#">Privacy policy</a>
+            <a class="QuickLink" href="#">Terms and conditions</a>
+
+        </div>
+        <div>
+            <p><strong>Contact</strong></p>
+            <p>1234 </p>
+            <p>New York, NY 10001</p>
+            <p>+1-305-741-9983</p>
+            <p>info@zolaz.com</p>
+        </div>
+        <div>
+            <p><strong>Follow Us</strong></p>
+            <a href="#"  class="Follow">Instagram </a>
+            <span> |</span>
+            <a href="#" class="Follow">Twitter</a><span> |</span>
+            <a href="#" class="Follow">Facebook</a><span> |</span>
+            <a href="#" class="Follow">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script defer>
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const icon = document.getElementById('hamburger-icon');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        if (navLinks.classList.contains('nav-active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times'); // 'X' icon
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars'); // Hamburger icon
+        }
+    });
+
+    const picker = new Litepicker({
+        element: document.getElementById('date-range'),
+        singleMode: false,
+        format: 'DD-MMM-YYYY',
+        delimiter: ' - ',
+        minDate: new Date().toISOString().split('T')[0],
+        tooltipText: {
+            one: 'day',
+            other: 'days'
+        }
+    });
+</script>
