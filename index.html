@@ -9,11 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- for the date picker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
-    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js" defer></script>
     <!-- Font Awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <!-- CSS File -->
     <link rel="stylesheet" href="./Assest/css/index.css">
+    <!-- performance boost -->
+     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
 </head>
 
 <body>
@@ -40,7 +44,7 @@
 <!-- Haeder Section Start -->
     <header>
         <video autoplay muted loop playsinline class="bg-video">
-            <source src="./Assest/Images/video-66e7f8eae8381.mp4" type="video/mp4" />
+            <source src="./Assest/Images/video-66e7f8eae8381.mp4" type="video/mp4"  loading="lazy" poster="./Assest/Images/DesertVilla.jpg" />
             Your browser does not support the video tag.
         </video>
         <div class="hero-text">
@@ -83,21 +87,21 @@
         <h2>Curated Collections</h2>
         <div class="cards">
             <div class="card">
-                <img src="./Assest/Images/Ocean.webp" alt="Azure Ocean Resort">
+                <img loading="lazy" src="./Assest/Images/Ocean.webp" alt="Azure Ocean Resort">
                 <div class="card-content">
                     <h3>Azure Ocean Resort</h3>
                     <p>Maldives — From $899/night</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./Assest/Images/mountainLodge.jpeg" alt="Mountain Lodge">
+                <img loading="lazy" src="./Assest/Images/mountainLodge.jpeg" alt="Mountain Lodge">
                 <div class="card-content">
                     <h3>Mountain Lodge</h3>
                     <p>Swiss Alps — From $699/night</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./Assest/Images/DesertVilla.webp" alt="Desert Oasis Villa">
+                <img loading="lazy" src="./Assest/Images/DesertVilla.webp" alt="Desert Oasis Villa">
                 <div class="card-content">
                     <h3>Desert Oasis Villa</h3>
                     <p>Dubai — From $799/night</p>
@@ -109,7 +113,7 @@
     <section>
         <div class="cards">
             <div class="card" style="height: 350px;">
-                <img src="./Assest/Images/BeyondStay.webp" alt="Beyond Stays" style="height: 350px;">
+                <img loading="lazy" src="./Assest/Images/BeyondStay.webp" alt="Beyond Stays" style="height: 350px;">
             </div>
             <div class="card-content" style="text-align:left">
                 <h2>Beyond Ordinary Stays</h2>
@@ -124,28 +128,28 @@
         <h2>Popular Destinations</h2>
         <div class="cards">
             <div class="card">
-                <img src="./Assest/Images/paris.webp" alt="Paris">
+                <img loading="lazy" src="./Assest/Images/paris.webp" alt="Paris">
                 <div class="card-content">
                     <h3>Paris</h3>
                     <p>24 Properties</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./Assest/Images/santorini.webp" alt="Santorini">
+                <img loading="lazy" src="./Assest/Images/santorini.webp" alt="Santorini">
                 <div class="card-content">
                     <h3>Santorini</h3>
                     <p>18 Properties</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./Assest/Images/tokyo.webp" alt="Tokyo">
+                <img loading="lazy" src="./Assest/Images/tokyo.webp" alt="Tokyo">
                 <div class="card-content">
                     <h3>Tokyo</h3>
                     <p>32 Properties</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./Assest/Images/Dubai.webp" alt="Dubai">
+                <img loading="lazy" src="./Assest/Images/Dubai.webp" alt="Dubai">
                 <div class="card-content">
                     <h3>Dubai</h3>
                     <p>28 Properties</p>
@@ -156,17 +160,17 @@
 <!-- Features Section Start -->
     <div class="features">
         <div>
-            <img src="./Assest/Images/concierge.svg" alt="Concierge Svg">
+            <img loading="lazy" src="./Assest/Images/concierge.svg" alt="Concierge Svg">
             <h3>24/7 Concierge</h3>
             <p class="text_Color">Personalized assistance at your fingertips</p>
         </div>
         <div>
-            <img src="./Assest/Images/privacy.svg" alt="Concierge Svg">
+            <img loading="lazy" src="./Assest/Images/privacy.svg" alt="Concierge Svg">
             <h3>Secure Booking</h3>
             <p class="text_Color">Safe and reliable reservation process</p>
         </div>
         <div>
-            <img src="./Assest/Images/support.svg" alt="Concierge Svg">
+            <img loading="lazy" src="./Assest/Images/support.svg" alt="Concierge Svg">
             <h3>Expert Support</h3>
             <p class="text_Color">Dedicated team for your needs</p>
         </div>
